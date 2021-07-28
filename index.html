@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin - Fashion With Tailwind CSS</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/da64c383ec.js" crossorigin="anonymous"></script>
+    <!-- Tailwind css cdn use -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header area start -->
+    <header class="hero-bg">
+        <!-- stat nav  -->
+        <nav class="py-4">
+            <div class="container flex justify-between items-center mx-auto">
+                <div class="div flex items-center justify-between w-full lg:w-auto px-3">
+                    <a href="#"><img class="w-64 md:w-96 z-50" src="icons/logo.png" alt="logo"></a>
+                    <button class="lg:hidden" id="menuButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block  h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="my-div xl:mr-36 absolute lg:static flex lg:block flex-col w-full lg:w-auto top-16 left-0" id="menu">
+                    <a class=" text-center text-2xl ml-6 mb-2 uppercase" href="#">Home</a>
+                    <a class="text-center  text-2xl ml-6 mb-2 uppercase" href="#services">About</a>
+                    <a class="text-center  text-2xl ml-6 mb-2 uppercase" href="#products">Products</a>
+                    <a class="text-center  text-2xl ml-6 mb-2 uppercase" href="#products">Shops</a>
+                    <a class="text-center  text-2xl ml-6 mb-2 uppercase" href="#products">Offers</a>
+                </div>
+            </div>
+        </nav>
+        <!-- end nav -->
+        <section class="container md:flex items-center justify-around py-9 px-4">
+            <div class="hero-lef">
+                <h1 class="text-7xl font-bold uppercase my">
+                    <span class="text-color">Be the Penguins</span>
+                    <br>
+                    <span class="text-s-color">of Winter</span>
+                </h1>
+                <p class="summery w-2/3">
+                    Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry.
+                </p>
+                <button class="text-white uppercase px-7 py-4 btn">Buy Now <i class="fas fa-shopping-cart"></i></button>
+            </div>
+            <div class="hero-right">
+                <img src="images/model.png" alt="model">
+            </div>
+        </section>
+    </header>
+    <!-- end header area  -->
+    <!-- main area start  -->
+    <main>
+        <!-- start women jacket section -->
+        <section class="container px-8 mx-auto py-6">
+            <h2 class="text-s-color text-3xl uppercase font-blod">Woman Jacket</h2>
+            <div class="grid lg:grid-cols-3 gap-4">
+                <div class="shadow-lg rounded-3xl p-4 space-y-3">
+                    <div class="bg-gray-200 rounded-3xl">
+                        <img src="images/jacket-1.png" alt="jacket-1">
+                    </div>
+                    <h4 class="text-s-color text-3xl font-blod text-center">Yellow Coat Jacket </h4>
+                    <p class="summery text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h2 class="text-5xl price font-black">$234</h2>
+                        <button class="text-white uppercase px-7 py-4 btn">Buy Now <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-3xl p-4 space-y-3">
+                    <div class="bg-gray-200 rounded-3xl">
+                        <img src="images/jacket-1.png" alt="jacket-1">
+                    </div>
+                    <h4 class="text-s-color text-3xl font-blod text-center">Ladies Jacket </h4>
+                    <p class="summery text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h2 class="text-5xl price font-black">$234</h2>
+                        <button class="text-white uppercase px-7 py-4 btn">Buy Now <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-3xl p-4 space-y-3">
+                    <div class="bg-gray-200 rounded-3xl">
+                        <img src="images/jacket-1.png" alt="jacket-1">
+                    </div>
+                    <h4 class="text-s-color text-3xl font-blod text-center">Woman Leather Jacket </h4>
+                    <p class="summery text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h2 class="text-5xl price font-black">$234</h2>
+                        <button class="text-white uppercase px-7 py-4 btn">Buy Now <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end women jacket  -->
+        <!-- start Man jacket section -->
+        <section class="container px-8 mx-auto py-6">
+            <h2 class="text-s-color text-3xl uppercase font-blod">Man Jacket</h2>
+            <div class="grid lg:grid-cols-3 gap-4">
+                <div class="shadow-lg rounded-3xl p-4 space-y-3">
+                    <div class="bg-gray-200 rounded-3xl">
+                        <img src="images/jacket-1.png" alt="jacket-1">
+                    </div>
+                    <h4 class="text-s-color text-3xl font-blod text-center">Yellow Coat Jacket </h4>
+                    <p class="summery text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h2 class="text-5xl price font-black">$234</h2>
+                        <button class="text-white uppercase px-7 py-4 btn">Buy Now <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-3xl p-4 space-y-3">
+                    <div class="bg-gray-200 rounded-3xl">
+                        <img src="images/jacket-1.png" alt="jacket-1">
+                    </div>
+                    <h4 class="text-s-color text-3xl font-blod text-center">Ladies Jacket </h4>
+                    <p class="summery text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h2 class="text-5xl price font-black">$234</h2>
+                        <button class="text-white uppercase px-7 py-4 btn">Buy Now <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="shadow-lg rounded-3xl p-4 space-y-3">
+                    <div class="bg-gray-200 rounded-3xl">
+                        <img src="images/jacket-1.png" alt="jacket-1">
+                    </div>
+                    <h4 class="text-s-color text-3xl font-blod text-center">Woman Leather Jacket </h4>
+                    <p class="summery text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex justify-between">
+                        <h2 class="text-5xl price font-black">$234</h2>
+                        <button class="text-white uppercase px-7 py-4 btn">Buy Now <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Man jacket  -->
+        <!-- start feature section  -->
+        <section class="py-12">
+            <div class="container mx-auto">
+                <div class="lg:flex justify-between items-center">
+                    <div>
+                        <div class="flex mb-8 shadow rounded-2xl p-4 items-center">
+                            <div class="item-icon">
+                                <img class="w-14" src="icons/image 12.png" alt="image 12">
+                            </div>
+                            <div class="main-content pl-3">
+                                <h2 class="text-2xl font-bold py-3">Find the Perfect Fit</h2>
+                                <p>Everybody is different, which is why we offer styles
+                                    for every body</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-8 shadow rounded-2xl p-4 items-center">
+                            <div class="item-icon">
+                                <img class="w-14" src="icons/image 13.png" alt="image 13">
+                            </div>
+                            <div class="main-content pl-3">
+                                <h2 class="text-2xl font-bold py-3">Free Exchanges</h2>
+                                <p>One of the many reasons you can shop
+                                    with peace of mind.</p>
+                            </div>
+                        </div>
+                        <div class="flex shadow rounded-2xl p-4 items-center">
+                            <div class="item-icon">
+                                <img class="w-14" src="icons/image 14.png" alt="image 14">
+                            </div>
+                            <div class="main-content pl-3">
+                                <h2 class="text-2xl font-bold py-3">Contact Our Seller</h2>
+                                <p>They are here to help you. That's quite
+                                    literally what we pay them for.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 my-6">
+                        <img class="w-full" src="images/shopping.png" alt="shopping">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end feature section  -->
+    </main>
+    <!-- end main area  -->
+    <!-- footer area start  -->
+    <footer class="text-center py-5 text-1xl font-bold">
+        <p class="f-text">&copy;2021. Penguin Fashion. All rights reserved.</p>
+    </footer>
+    <!-- end footer area  -->
+    <script>
+        var menuButton = document.getElementById('menuButton')
+        var menu = document.getElementById('menu')
+        menu.style.top = "-250px"
+        menu.style.transition = "0.5s"
+        menuButton.onclick = function () {
+            if (menu.style.top == "-250px") {
+                menu.style.top = "55px"
+            } else {
+                menu.style.top = "-250px"
+            }
+        }
+    </script>
+</body>
+</html>
